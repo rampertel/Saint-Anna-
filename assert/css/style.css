@@ -299,12 +299,13 @@ header .fa-bars {
 .event .box-container .box .image img{
     height: 100%;
     width: 100%;
-    border-radius: .5rem;
     object-fit: cover;
+    border-radius: .5rem;
+ 
 }
 
 .event .box-container .box .event-info{
-    padding: 1.5rem;
+    padding: 1rem;
     padding-top: 0;
 }
 
@@ -354,7 +355,7 @@ header .fa-bars {
 
 .review .slide .user img{
     height: 6rem;
-    width: 6rem;
+    width: auto;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -803,7 +804,7 @@ header .fa-bars {
     }
 
     .recent .blogs .blog{
-        padding: 1rem 2rem ;
+        padding: 1rem ;
           
     }
     
@@ -812,8 +813,12 @@ header .fa-bars {
         gap: 2rem;
     }
 
+    .box-container .box .image{
+        padding: 0.5rem;
+    }
+
     .event .box-container .box{
-        padding: 0.8rem ; 
+        padding: 0; 
     }
     
     .event .veiw {
@@ -844,6 +849,33 @@ header .fa-bars {
 
     }
 
+@media (max-width:480px) {
+
+    .recent .blogs {
+        grid-template-columns: repeat(auto-fit, 23rem);
+        gap: 1.5rem; 
+    }
+    
+    .event .box-container{
+        grid-template-columns: repeat(auto-fit, 23rem);
+        gap: 1.5rem;
+      
+    }
+    }
+
+
+@media (max-width:380px) {
+    .recent .blogs {
+        grid-template-columns: repeat(auto-fit, 20rem);
+    
+    }
+
+    .event .box-container{
+        grid-template-columns: repeat(auto-fit, 20rem);
+   
+    }
+
+}
    
 
 
